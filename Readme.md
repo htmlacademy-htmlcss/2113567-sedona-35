@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Игорь Бобылев](https://up.htmlacademy.ru/htmlcss/35/user/2113567).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Быков](https://htmlacademy.ru/profile/nisvem).
 
 ---
 
