@@ -14,35 +14,237 @@
     src: url(../fonts/ptsans-700.woff2) format("woff2");
 }
 
+.visually-hidden {
+    opacity: 0;
+    position: absolute;
+}
+
 body {
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
-    width: 1200px;
+    max-width: 1200px;
+    color: #000;
+    background-color: #fff;
+}
+
+.navigation-list {
+    list-style: none;
+}
+
+.navigation-item {
+    text-align: center;
 }
 
 .nav-link {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
+    text-transform: capitalize;
+    text-decoration: none;
     color: #000;
 }
 
-.header-btn {
-    text-transform: uppercase;
-    text-decoration: none;
+.navigation-button {
     border-radius: 4px;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
     padding: 8px 34px;
+    text-align: center;
     color: #fff;
     background-color: #756157;
 }
 
+.navigation-button a {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+}
+
 .baner-block {
-    background-image: url(../images/img/hero-background.jpg);
-    width: 100%;
-    display: block;
+    background: #DCEAF3 url(../images/img/hero-background.jpg) no-repeat;
+    background-size: 100% auto;
+    text-align: center;
+    height: 485px;
+}
+
+.text-baner {
+    padding-top: 51px;
+}
+
+.banner-description {
+    text-align: center;
+}
+
+.description-heading {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.description-subtitle {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333;
+}
+
+.advantages-small{
+    list-style: none;
+}
+
+.advantage-small {
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    width: 400px;
+    height: 384px;
+}
+
+.advantages-small-icon {
+    list-style: none;
+}
+
+.advantage-small-icon {
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    width: 400px;
+    height: 384px;
+}
+
+.advantage-blue {
+    color: #fff;
+    background-color: #82B3D3;
+}
+
+.advantage-light {
+    color: #000;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-light-blue {
+    color: #000;
+    background: rgba(131, 179, 211, 0.2);
+}
+
+.advantage-white {
+    color: #000;
+    background-color: #fff;
+}
+
+.advantage-heading {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.advantage-paragraph {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.txt-white {
+    color: #fff;
+}
+
+.txt-dark {
+    color: #333;
+}
+
+.txt-black {
+    color: #000;
+}
+
+.call-to-action {
+    text-align: center;
+}
+
+.call-to-action-heading {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.call-to-action-text {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #333;
+}
+
+.call-to-action-button {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 8px 50px;
+    color: #fff;
+    background-color: #756157;
+}
+
+.subscribe {
+    background: #fff url(../images/img/subscribe-background.jpg) no-repeat;
+    background-size: 100% auto;
+    height: 414.86px;
+    text-align: center;
+    padding-top: 96px;
+}
+
+.subscribe-heading {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.subscribe-text {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.subscribe-input {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000;
+    background-color: #fff;
+    padding: 14px 345px 14px 20px;
+    border-radius: 4px 0px 0px 4px;
+    border: none;
+}
+
+.subscribe-button {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color:#fff;
+    background-color: #82B3D3;
+    padding: 8px 50px;
+    border-radius: 0px 4px 4px 0px;
+    border: none;
+}
+
+.footer-social-networks {
+    list-style: none;
+}
+
+.footer-telephone {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
 }
