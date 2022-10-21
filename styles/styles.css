@@ -25,16 +25,46 @@ body {
     line-height: 21px;
     font-weight: 400;
     max-width: 1200px;
+    margin: 0 auto;
     color: #000;
     background-color: #fff;
 }
 
+.main-header {
+    padding: 0 70px 0 70px
+}
+
+.navigation {
+    display: flex;
+    height: 64px;
+}
+
+.header-logo {
+    margin-right: 30px;
+    width: 138px;
+}
+
 .navigation-list {
+    display: flex;
+    width: 339px;
+    height: 64px;
+    margin: auto 0;
     list-style: none;
+    padding-left: 0;
+}
+
+.navigation-user {
+    margin-left:auto;
+    width: 268px;
+}
+
+.navigation-icon {
+    padding: 22px 12px;
 }
 
 .navigation-item {
     text-align: center;
+    padding: 20px 16px;
 }
 
 .nav-link {
@@ -48,6 +78,9 @@ body {
 
 .navigation-button {
     border-radius: 4px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     padding: 8px 34px;
     text-align: center;
     color: #fff;
@@ -64,7 +97,7 @@ body {
 }
 
 .baner-block {
-    background: #DCEAF3 url(../images/img/hero-background.jpg) no-repeat;
+    background: #DCEAF3 url("../images/img/hero-background.jpg") no-repeat;
     background-size: 100% auto;
     text-align: center;
     height: 485px;
@@ -79,6 +112,10 @@ body {
 }
 
 .description-heading {
+    display: block;
+    width: 620px;
+    padding-top: 69px;
+    margin: 0 auto 25px auto;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -86,14 +123,24 @@ body {
 }
 
 .description-subtitle {
+    display: block;
+    padding-bottom: 90px;
+    margin: 0 auto 0 auto;
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
     color: #333;
 }
 
+.advantage-large-with-img {
+    display: flex;
+}
+
 .advantages-small{
     list-style: none;
+    display: flex;
+    margin:0;
+    padding: 0;
 }
 
 .advantage-small {
@@ -137,16 +184,20 @@ body {
 }
 
 .advantage-heading {
+    width: 175px;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 92px auto 30px auto;
 }
 
 .advantage-paragraph {
+    width: 230px;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
+    margin: 0 auto 0 auto;
 }
 
 .txt-white {
@@ -192,7 +243,7 @@ body {
 }
 
 .subscribe {
-    background: #fff url(../images/img/subscribe-background.jpg) no-repeat;
+    background: #fff url("../images/img/subscribe-background.jpg") no-repeat;
     background-size: 100% auto;
     height: 414.86px;
     text-align: center;
