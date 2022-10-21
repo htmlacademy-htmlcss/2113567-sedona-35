@@ -9,9 +9,11 @@
   <body>
     <header class="main-header">
       <nav class="navigation">
-        <a href="index.html">
+        <!-- Логотип -->
+        <a class="header-logo" href="index.html">
           <img src="images/svg/logotype-sedona.svg" width="138" height="64" alt="Логотип Седоны, небольшого городка в аризоне">
         </a>
+        <!-- Пункты меню -->
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="nav-link nav-link-active" href="#">Главная</a>
@@ -23,18 +25,19 @@
             <a class="nav-link" href="#">Гостиницы</a>
           </li>
         </ul>
+        <!-- Иконки и кнопка -->
         <ul class="navigation-list navigation-user">
-          <li>
+          <li class="navigation-icon">
             <span class="visually-hidden">Поиск</span>
             <img src="images/svg/icon-header-search.svg" width="20" height="20" alt="Поиск">
           </li>
-          <li>
+          <li class="navigation-icon">
             <span class="visually-hidden">Избранное</span>
             <img src="images/svg/icon-header-heart.svg" width="20" height="20" alt="Избранное">
           </li>
-          <li>
+          <li class="navigation-button">
             <span class="visually-hidden">Забронировать!</span>
-            <a class="header-btn" href="#">Хочу сюда!</a>
+            <a href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -46,65 +49,66 @@
         <div class="figure-baner"></div>
       </section>
       <section class="banner-description">
-          <h2 class="description-heading">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <h2 class="description-heading">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне,
+            заслуживающий большего!</h2>
           <p class="description-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <section class="main-advantages">
         <h3 class="visually-hidden">Преимущества</h3>
         <div class="advantage-large-with-img">
           <div class="advantage-small advantage-blue">
-            <h4 class="advantage-heading advantage-txt-white">Настоящий городок</h4>
-            <p class="advantage-paragraph advantage-txt-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <h4 class="advantage-heading txt-white">Настоящий городок</h4>
+            <p class="advantage-paragraph txt-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <img class="img-advantage-large" src="images/img/Advantage-vilage.jpg" width="800" height="384" alt="Дома на фоне гор">
         </div>
         <ul class="advantages-small">
             <li class="advantage-small advantage-light">
-              <h4 class="advantage-heading advantage-txt-black">Небольшая площадь</h4>
-              <p class="advantage-paragraph advantage-txt-black">Все достопримечательности находятся очень близко</p>
+              <h4 class="advantage-heading txt-black">Небольшая площадь</h4>
+              <p class="advantage-paragraph txt-dark">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="advantage-small advantage-light-blue">
-              <h4 class="advantage-heading advantage-txt-black">Красивая дорога</h4>
-              <p class="advantage-paragraph advantage-txt-black">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <h4 class="advantage-heading txt-black">Красивая дорога</h4>
+              <p class="advantage-paragraph txt-dark">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="advantage-small advantage-light">
-              <h4 class="advantage-heading advantage-txt-black">Мало туристов</h4>
-              <p class="advantage-paragraph advantage-txt-black">Большинство едет в Гранд Каньон и толпится там</p>
+              <h4 class="advantage-heading txt-black">Мало туристов</h4>
+              <p class="advantage-paragraph txt-dark">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
         </ul>
         <div class="advantage-large-with-img">
           <img src="images/img/Advantage-canyon.jpg" width="800" height="384" alt="Каньон в седоне">
           <div class="advantage-small advantage-blue">
-            <h4 class="advantage-heading advantage-txt-white">Там есть мост дьявола</h4>
-            <p class="advantage-paragraph advantage-txt-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            <h4 class="advantage-heading txt-white">Там есть мост дьявола</h4>
+            <p class="advantage-paragraph txt-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
         </div>
         <ul class="advantages-small-icon">
-          <li class="advantage-small-icon adventage-light-blue">
+          <li class="advantage-small-icon advantage-light-blue">
             <img class="advantage-icon" src="images/svg/icon-advantage-house.svg" width="75" height="72" alt="Дом">
-            <h4 class="advantage-heading advantage-txt-black">Жильё</h4>
-            <p class="advantage-paragraph advantage-txt-black">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <h4 class="advantage-heading txt-black">Жильё</h4>
+            <p class="advantage-paragraph txt-dark">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li class="advantage-small-icon advantage-white">
             <img class="advantage-icon" src="images/svg/icon-advantage-food.svg" width="75" height="72" alt="Бургер">
-            <h4 class="advantage-heading advantage-txt-black">Еда</h4>
-            <p class="advantage-paragraph advantage-txt-black">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <h4 class="advantage-heading txt-black">Еда</h4>
+            <p class="advantage-paragraph txt-dark">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="advantage-small-icon advantage-light-blue">
             <img class="advantage-icon" src="images/svg/icon-advantage-gift.svg" width="75" height="72" alt="Подарочная коробка">
-            <h4 class="advantage-heading advantage-txt-black">Сувениры</h4>
-            <p class="advantage-paragraph advantage-txt-black">Не только китайского, но и настоящего местного производства!</p>
+            <h4 class="advantage-heading txt-black">Сувениры</h4>
+            <p class="advantage-paragraph txt-dark">Не только китайского, но и настоящего местного производства!</p>
           </li>
          </ul>
       </section>
       <section class="call-to-action">
         <h2 class="call-to-action-heading">Заинтересовались?</h2>
         <p class="call-to-action-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="call-to-action-btn" href="#">Поиск гостинницы в седоне</a>
+        <a class="call-to-action-button" href="#">Поиск гостинницы в седоне</a>
       </section>
       <section class="subscribe">
-        <h2 class="subscribe-heading">Подпишитесь на рассылку</h2>
-        <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="subscribe-heading txt-white">Подпишитесь на рассылку</h2>
+        <p class="subscribe-text txt-white">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <input class="subscribe-input" type="e-mail" name="user e-mail" placeholder="Ваш e-mail">
           <button class="subscribe-button" type="submit">Подписаться</button>
