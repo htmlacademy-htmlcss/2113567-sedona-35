@@ -9,22 +9,24 @@
   <body>
     <header class="main-header">
       <nav class="navigation">
-        <!-- Логотип -->
-        <a class="header-logo" href="index.html">
-          <img src="images/svg/logotype-sedona.svg" width="138" height="64" alt="Логотип Седоны, небольшого городка в аризоне">
-        </a>
-        <!-- Пункты меню -->
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="nav-link nav-link-active" href="#">Главная</a>
-          </li>
-          <li class="navigation-item">
-            <a class="nav-link" href="#">О седоне</a>
-          </li>
-          <li class="navigation-item">
-            <a class="nav-link" href="#">Гостиницы</a>
-          </li>
-        </ul>
+        <div class="header-left">
+          <!-- Логотип -->
+          <a class="header-logo" href="index.html">
+            <img src="images/svg/logotype-sedona.svg" width="138" height="64" alt="Логотип Седоны, небольшого городка в аризоне">
+          </a>
+          <!-- Пункты меню -->
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="nav-link nav-link-active" href="#">Главная</a>
+            </li>
+            <li class="navigation-item">
+              <a class="nav-link" href="#">О седоне</a>
+            </li>
+            <li class="navigation-item">
+              <a class="nav-link" href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </div>
         <!-- Иконки и кнопка -->
         <ul class="navigation-list navigation-user">
           <li class="navigation-icon">
@@ -42,15 +44,14 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main-container">
       <section class="baner-block">
         <h1 class="visually-hidden">Седона</h1>
         <img class="text-baner" src="images/svg/text-hero.svg" width="458" height="352" alt="Welcome to the gorgeous. Sedona. Because the grand canyon sucks">
         <div class="figure-baner"></div>
       </section>
       <section class="banner-description">
-          <h2 class="description-heading">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне,
-            заслуживающий большего!</h2>
+          <h2 class="description-heading">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h2>
           <p class="description-subtitle">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <section class="main-advantages">
@@ -104,11 +105,13 @@
       <section class="call-to-action">
         <h2 class="call-to-action-heading">Заинтересовались?</h2>
         <p class="call-to-action-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="call-to-action-button" href="#">Поиск гостинницы в седоне</a>
+        <div class="container-button">
+          <a class="call-to-action-button" href="#">Поиск гостинницы в седоне</a>
+        </div>
       </section>
       <section class="subscribe">
         <h2 class="subscribe-heading txt-white">Подпишитесь на рассылку</h2>
-        <p class="subscribe-text txt-white">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="subscribe-text txt-white">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <input class="subscribe-input" type="e-mail" name="user e-mail" placeholder="Ваш e-mail">
           <button class="subscribe-button" type="submit">Подписаться</button>

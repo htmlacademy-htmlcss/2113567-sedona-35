@@ -14,29 +14,42 @@
     src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
+html {
+    height: 100%;
+}
+
 .visually-hidden {
     opacity: 0;
     position: absolute;
 }
 
 body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    width: 1200px;
     font-family: "PT Sans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
-    max-width: 1200px;
-    margin: 0 auto;
     color: #000;
     background-color: #fff;
 }
 
 .main-header {
-    padding: 0 70px 0 70px
+    background-color: #fff;
 }
 
 .navigation {
     display: flex;
-    height: 64px;
+    margin: 0 auto;
+    width: 1060px;
+}
+
+.header-left {
+    display: flex;
+    margin-right: auto;
 }
 
 .header-logo {
@@ -46,15 +59,18 @@ body {
 
 .navigation-list {
     display: flex;
-    width: 339px;
-    height: 64px;
-    margin: auto 0;
+    align-items: center;
+    width: 454px;
+    margin: 0;
     list-style: none;
-    padding-left: 0;
+    padding: 0;
+}
+
+.navigation-item {
+    padding: 20px 16px;
 }
 
 .navigation-user {
-    margin-left:auto;
     width: 268px;
 }
 
@@ -62,9 +78,8 @@ body {
     padding: 22px 12px;
 }
 
-.navigation-item {
-    text-align: center;
-    padding: 20px 16px;
+.navigation-user .navigation-icon:nth-child(2) {
+    margin-right: auto;
 }
 
 .nav-link {
@@ -78,22 +93,23 @@ body {
 
 .navigation-button {
     border-radius: 4px;
-    margin-left: auto;
-    margin-top: auto;
-    margin-bottom: auto;
     padding: 8px 34px;
-    text-align: center;
     color: #fff;
     background-color: #756157;
 }
 
 .navigation-button a {
+    display: block;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
+}
+
+.main-container {
+    flex-grow: 1;
 }
 
 .baner-block {
@@ -108,14 +124,16 @@ body {
 }
 
 .banner-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
 .description-heading {
-    display: block;
-    width: 620px;
+    margin: 0 0 25px;
     padding-top: 69px;
-    margin: 0 auto 25px auto;
+    width: 620px;
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
@@ -123,9 +141,8 @@ body {
 }
 
 .description-subtitle {
-    display: block;
-    padding-bottom: 90px;
-    margin: 0 auto 0 auto;
+    margin: 0;
+    margin-bottom: 90px;
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
@@ -134,33 +151,41 @@ body {
 
 .advantage-large-with-img {
     display: flex;
+    justify-content: space-between;
 }
 
 .advantages-small{
-    list-style: none;
     display: flex;
     margin:0;
     padding: 0;
+    justify-content: space-between;
+    list-style: none;
 }
 
 .advantage-small {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     color: #000;
     background-color: #fff;
-    text-align: center;
-    width: 400px;
-    height: 384px;
 }
 
 .advantages-small-icon {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
     list-style: none;
 }
 
 .advantage-small-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #000;
     background-color: #fff;
     text-align: center;
-    width: 400px;
-    height: 384px;
 }
 
 .advantage-blue {
@@ -183,21 +208,48 @@ body {
     background-color: #fff;
 }
 
+.advantage-icon {
+    padding-top: 80px;
+}
+
 .advantage-heading {
-    width: 175px;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
     text-transform: uppercase;
-    margin: 92px auto 30px auto;
+    width: 175px;
+    margin: 0;
+    padding: 92px 85px 0;
+
+}
+
+.advantage-small-icon .advantage-heading {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 175px;
+    margin: 0;
+    padding: 30px 85px 0;
+
 }
 
 .advantage-paragraph {
-    width: 230px;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
-    margin: 0 auto 0 auto;
+    width: 230px;
+    margin: 0;
+    padding: 62px 85px 111px;
+}
+
+.advantages-small-icon .advantage-paragraph {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    width: 230px;
+    margin: 0;
+    padding: 30px 85px 81px;
 }
 
 .txt-white {
@@ -213,6 +265,9 @@ body {
 }
 
 .call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -221,6 +276,8 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    margin: 0;
+    padding-top: 96px;
 }
 
 .call-to-action-text {
@@ -228,9 +285,17 @@ body {
     line-height: 26px;
     font-weight: 400;
     color: #333;
+    width: 592px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.call-to-action .container-button {
+    padding: 54px 0 96px;
 }
 
 .call-to-action-button {
+    display: block;
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
@@ -245,9 +310,7 @@ body {
 .subscribe {
     background: #fff url("../images/img/subscribe-background.jpg") no-repeat;
     background-size: 100% auto;
-    height: 414.86px;
     text-align: center;
-    padding-top: 96px;
 }
 
 .subscribe-heading {
@@ -255,12 +318,19 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    padding-top: 96px;
+    margin: 0 0 20px;
 }
 
 .subscribe-text {
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
+    margin: 0 0 54px;
+}
+
+.subscribe-form {
+    padding-bottom: 104px;
 }
 
 .subscribe-input {
@@ -286,8 +356,21 @@ body {
     border: none;
 }
 
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1060px;
+    margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
+
 .footer-social-networks {
+    display: flex;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-telephone {
