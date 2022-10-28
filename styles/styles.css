@@ -19,8 +19,14 @@ html {
 }
 
 .visually-hidden {
-    opacity: 0;
     position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 body {
@@ -53,6 +59,8 @@ body {
 }
 
 .header-logo {
+    display: block;
+    padding: 0;
     margin-right: 30px;
     width: 138px;
 }
@@ -60,14 +68,11 @@ body {
 .navigation-list {
     display: flex;
     align-items: center;
-    width: 454px;
+    flex-wrap: wrap;
+    max-width: 454px;
     margin: 0;
     list-style: none;
     padding: 0;
-}
-
-.navigation-item {
-    padding: 20px 16px;
 }
 
 .navigation-user {
@@ -78,11 +83,13 @@ body {
     padding: 22px 12px;
 }
 
-.navigation-user .navigation-icon:nth-child(2) {
+.navigation-user .navigation-item:nth-child(2) {
     margin-right: auto;
 }
 
 .nav-link {
+    display: block;
+    padding: 20px 16px;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
@@ -93,13 +100,13 @@ body {
 
 .navigation-button {
     border-radius: 4px;
-    padding: 8px 34px;
     color: #fff;
     background-color: #756157;
 }
 
 .navigation-button a {
     display: block;
+    padding: 8px 34px;
     font-size: 16px;
     line-height: 20px;
     font-weight: 700;
@@ -116,11 +123,13 @@ body {
     background: #DCEAF3 url("../images/img/hero-background.jpg") no-repeat;
     background-size: 100% auto;
     text-align: center;
-    height: 485px;
+    padding: 51px 0 82px;
 }
 
 .text-baner {
-    padding-top: 51px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .banner-description {
@@ -128,11 +137,11 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 69px 0 90px;
 }
 
 .description-heading {
     margin: 0 0 25px;
-    padding-top: 69px;
     width: 620px;
     font-size: 30px;
     line-height: 36px;
@@ -142,7 +151,6 @@ body {
 
 .description-subtitle {
     margin: 0;
-    margin-bottom: 90px;
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
@@ -151,7 +159,12 @@ body {
 
 .advantage-large-with-img {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+}
+
+.img-advantage-large {
+    max-width: 800px;
+    height: auto;
 }
 
 .advantages-small{
@@ -163,10 +176,14 @@ body {
 }
 
 .advantage-small {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
     text-align: center;
+    min-height: 384px;
+    padding: 92px 0 111px;
     color: #000;
     background-color: #fff;
 }
@@ -180,12 +197,16 @@ body {
 }
 
 .advantage-small-icon {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    min-height: 384px;
+    padding: 80px 0 81px;
     color: #000;
     background-color: #fff;
-    text-align: center;
 }
 
 .advantage-blue {
@@ -209,7 +230,7 @@ body {
 }
 
 .advantage-icon {
-    padding-top: 80px;
+    margin-bottom: 30px;
 }
 
 .advantage-heading {
@@ -217,10 +238,8 @@ body {
     line-height: 28px;
     font-weight: 700;
     text-transform: uppercase;
-    width: 175px;
-    margin: 0;
-    padding: 92px 85px 0;
-
+    max-width: 175px;
+    margin: 0 0 62px;
 }
 
 .advantage-small-icon .advantage-heading {
@@ -228,28 +247,20 @@ body {
     line-height: 28px;
     font-weight: 700;
     text-transform: uppercase;
-    width: 175px;
-    margin: 0;
-    padding: 30px 85px 0;
-
+    max-width: 230px;
+    margin: 0 0 30px;
 }
 
 .advantage-paragraph {
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
-    width: 230px;
+    max-width: 230px;
     margin: 0;
-    padding: 62px 85px 111px;
 }
 
 .advantages-small-icon .advantage-paragraph {
-    font-size: 18px;
-    line-height: 21px;
-    font-weight: 400;
-    width: 230px;
     margin: 0;
-    padding: 30px 85px 81px;
 }
 
 .txt-white {
@@ -269,6 +280,7 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 96px 0;
 }
 
 .call-to-action-heading {
@@ -276,8 +288,7 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
-    margin: 0;
-    padding-top: 96px;
+    margin: 0 0 20px;
 }
 
 .call-to-action-text {
@@ -285,13 +296,8 @@ body {
     line-height: 26px;
     font-weight: 400;
     color: #333;
-    width: 592px;
-    margin: 0;
-    padding-top: 20px;
-}
-
-.call-to-action .container-button {
-    padding: 54px 0 96px;
+    max-width: 592px;
+    margin: 0 0 54px;
 }
 
 .call-to-action-button {
@@ -308,9 +314,13 @@ body {
 }
 
 .subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 96px 0 104px;
     background: #fff url("../images/img/subscribe-background.jpg") no-repeat;
     background-size: 100% auto;
-    text-align: center;
 }
 
 .subscribe-heading {
@@ -318,7 +328,6 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
-    padding-top: 96px;
     margin: 0 0 20px;
 }
 
@@ -326,19 +335,22 @@ body {
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
+    max-width: 475px;
     margin: 0 0 54px;
 }
 
 .subscribe-form {
-    padding-bottom: 104px;
+    display: flex;
 }
 
 .subscribe-input {
+    display: block;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
     color: #000;
     background-color: #fff;
+    max-width: 452px;
     padding: 14px 345px 14px 20px;
     border-radius: 4px 0 0 4px;
     border: none;
@@ -361,23 +373,33 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 1060px;
-    margin: 0 auto;
-    padding-top: 45px;
-    padding-bottom: 35px;
+    margin: 0 auto 0;
+    padding: 40px 0 30px;
 }
 
 .footer-social-networks {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    max-width: 192px;
     margin: 0;
     padding: 0;
+}
+
+.social-network {
+    min-width: 48px;
+    min-height: 40px;
+    text-align: center;
+}
+
+.social-network-link {
+    display: block;
 }
 
 .footer-telephone {
     font-size: 40px;
     line-height: 40px;
     font-weight: 400;
-    text-transform: uppercase;
     text-decoration: none;
     color: #000;
 }
