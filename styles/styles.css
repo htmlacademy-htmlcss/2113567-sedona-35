@@ -98,6 +98,11 @@ body {
     right: 4px;
 }
 
+.nav-link-active {
+    /* border-bottom: 2px solid #756257; */
+ /* Тут будет подчеркивание для активного эллемента */
+}
+
 .nav-link {
     display: block;
     padding: 20px 16px;
@@ -406,6 +411,11 @@ body {
 
 .social-network-link {
     display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 .footer-telephone {
