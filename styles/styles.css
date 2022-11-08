@@ -45,6 +45,7 @@ body {
 
 .main-header {
     background-color: #fff;
+    z-index: 1;
 }
 
 .navigation {
@@ -99,19 +100,25 @@ body {
 }
 
 .nav-link-active {
-    /* border-bottom: 2px solid #756257; */
- /* Тут будет подчеркивание для активного эллемента */
+    box-sizing: border-box;
+    height: 64px;
+    border-bottom: 2px solid #756257;
 }
 
 .nav-link {
     display: block;
-    padding: 20px 16px;
+    padding: 20px 0;
+    margin: 0 16px 0;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
     text-transform: capitalize;
     text-decoration: none;
     color: #000;
+}
+
+.navigation-item:last-child .nav-link {
+    margin-right: 0;
 }
 
 .navigation-button {
@@ -191,6 +198,7 @@ body {
 }
 
 .advantage-small {
+    position: relative;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -229,14 +237,41 @@ body {
     background-color: #82B3D3;
 }
 
+.advantage-blue::before {
+    content: "";
+    position: relative;
+    top: 86px;
+    width: 60px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 .advantage-light {
     color: #000;
     background-color: rgba(131, 179, 211, 0.12);
 }
 
+.advantage-light::before {
+    content: "";
+    position: relative;
+    top: 86px;
+    width: 60px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .advantage-light-blue {
     color: #000;
     background: rgba(131, 179, 211, 0.2);
+}
+
+.advantage-light-blue::before {
+    content: "";
+    position: relative;
+    top: 86px;
+    width: 60px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .advantage-white {
