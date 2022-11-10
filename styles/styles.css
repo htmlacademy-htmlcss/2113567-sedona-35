@@ -228,9 +228,26 @@ body {
     flex-grow: 1;
     text-align: center;
     min-height: 384px;
-    padding: 80px 0 81px;
     color: #000;
     background-color: #fff;
+}
+
+.advantage-small-icon:nth-child(1) {
+    background-image: url("../images/svg/icon-advantage-house.svg");
+    background-repeat: no-repeat;
+    background-position: 162.5px 80px;
+}
+
+.advantage-small-icon:nth-child(2) {
+    background-image: url("../images/svg/icon-advantage-food.svg");
+    background-repeat: no-repeat;
+    background-position: 162.5px 80px;
+}
+
+.advantage-small-icon:nth-child(3) {
+    background-image: url("../images/svg/icon-advantage-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 162.5px 80px;
 }
 
 .advantage-blue {
@@ -240,8 +257,8 @@ body {
 
 .advantage-blue::before {
     content: "";
-    position: relative;
-    top: 86px;
+    position: absolute;
+    bottom: 204px;
     width: 60px;
     height: 2px;
     background-color: rgba(255, 255, 255, 0.3);
@@ -253,10 +270,10 @@ body {
 }
 
 .advantage-light::before,
-.advantage-light-blue::before {
+.advantage-small.advantage-light-blue::before {
     content: "";
-    position: relative;
-    top: 86px;
+    position: absolute;
+    bottom: 204px;
     width: 60px;
     height: 2px;
     background-color: rgba(0, 0, 0, 0.3);
@@ -291,6 +308,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     max-width: 230px;
+    padding-top: 182px;
     margin: 0 0 30px;
 }
 
@@ -303,6 +321,7 @@ body {
 }
 
 .advantages-small-icon .advantage-paragraph {
+    padding-bottom: 81px;
     margin: 0;
 }
 
@@ -431,7 +450,7 @@ body {
     padding: 0;
 }
 
-.social-network {
+.social-network-container {
     min-width: 48px;
     min-height: 40px;
     text-align: center;
@@ -443,7 +462,6 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 .footer-telephone {
