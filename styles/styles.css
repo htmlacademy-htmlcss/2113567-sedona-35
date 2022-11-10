@@ -106,6 +106,12 @@ body {
     border-bottom: 2px solid #756257;
 }
 
+.nav-link:hover {
+    box-sizing: border-box;
+    height: 64px;
+    border-bottom: 2px solid #E5E5E5;
+}
+
 .nav-link {
     display: block;
     padding: 20px 0;
@@ -125,6 +131,19 @@ body {
 .navigation-button {
     border-radius: 4px;
     color: #fff;
+    background-color: #756157;
+}
+
+.navigation-button:hover {
+    background-color: #615048;
+}
+
+.navigation-button:focus {
+    background-color: #615048;
+}
+
+.navigation-button:active {
+    color: rgba(255, 255, 255, 0.3);
     background-color: #756157;
 }
 
@@ -375,6 +394,19 @@ body {
     background-color: #756157;
 }
 
+.call-to-action-button:hover {
+    background-color: #615048;
+}
+
+.call-to-action-button:focus {
+    background-color: #615048;
+}
+
+.call-to-action-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #756157;
+}
+
 .subscribe {
     display: flex;
     flex-direction: column;
@@ -432,6 +464,19 @@ body {
     border: none;
 }
 
+.subscribe-button:hover {
+    background-color: #68A2CA;
+}
+
+.subscribe-button:focus {
+    background-color: #68A2CA;
+}
+
+.subscribe-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #82B3D3;
+}
+
 .main-footer {
     display: flex;
     justify-content: space-between;
@@ -450,18 +495,28 @@ body {
     padding: 0;
 }
 
-.social-network-container {
-    min-width: 48px;
-    min-height: 40px;
-    text-align: center;
+.social-network-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 40px;
 }
 
-.social-network-link {
-    display: block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.social-logo {
+    fill: #83B3D3;
+}
+
+.social-network-link:hover .social-logo {
+    fill: #68A2CA;
+}
+
+.social-network-link:focus svg {
+    fill: #68A2CA;
+}
+
+.social-network-link:active .social-logo {
+    fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-telephone {
@@ -470,4 +525,36 @@ body {
     font-weight: 400;
     text-decoration: none;
     color: #000;
+}
+
+.footer-telephone:hover {
+    color: #756157;
+}
+
+.footer-telephone:focus {
+    color: #756157;
+}
+
+.footer-telephone:active {
+    color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-logo-link {
+    display: flex;
+}
+
+.footer-logo {
+    fill: #000;
+}
+
+.footer-logo-link:hover svg {
+    fill: #756157;
+}
+
+.footer-logo-link:focus svg {
+    fill: #756157;
+}
+
+.footer-logo-link:active svg {
+    fill: rgba(117, 97, 87, 0.3);
 }
