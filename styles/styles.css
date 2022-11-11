@@ -41,10 +41,12 @@ body {
     font-weight: 400;
     color: #000;
     background-color: #fff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .main-header {
     background-color: #fff;
+    z-index: 1;
 }
 
 .navigation {
@@ -63,6 +65,7 @@ body {
     padding: 0;
     margin-right: 30px;
     width: 138px;
+    height: 64px;
 }
 
 .navigation-list {
@@ -80,16 +83,39 @@ body {
 }
 
 .navigation-icon {
+    display: block;
+    height: 20px;
     padding: 22px 12px;
 }
 
 .navigation-user .navigation-item:nth-child(2) {
+    position: relative;
     margin-right: auto;
+}
+
+.navigation-user .navigation-item:nth-child(2)::before {
+    content: url("/images/svg/icon-header-heart-lable.svg");
+    position: absolute;
+    top: 11px;
+    right: 4px;
+}
+
+.nav-link-active {
+    box-sizing: border-box;
+    height: 64px;
+    border-bottom: 2px solid #756257;
+}
+
+.nav-link:hover {
+    box-sizing: border-box;
+    height: 64px;
+    border-bottom: 2px solid #E5E5E5;
 }
 
 .nav-link {
     display: block;
-    padding: 20px 16px;
+    padding: 20px 0;
+    margin: 0 16px 0;
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
@@ -98,9 +124,26 @@ body {
     color: #000;
 }
 
+.navigation-item:last-child .nav-link {
+    margin-right: 0;
+}
+
 .navigation-button {
     border-radius: 4px;
     color: #fff;
+    background-color: #756157;
+}
+
+.navigation-button:hover {
+    background-color: #615048;
+}
+
+.navigation-button:focus {
+    background-color: #615048;
+}
+
+.navigation-button:active {
+    color: rgba(255, 255, 255, 0.3);
     background-color: #756157;
 }
 
@@ -175,6 +218,7 @@ body {
 }
 
 .advantage-small {
+    position: relative;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -203,9 +247,26 @@ body {
     flex-grow: 1;
     text-align: center;
     min-height: 384px;
-    padding: 80px 0 81px;
     color: #000;
     background-color: #fff;
+}
+
+.advantage-small-icon:nth-child(1) {
+    background-image: url("../images/svg/icon-advantage-house.svg");
+    background-repeat: no-repeat;
+    background-position: 162.5px 80px;
+}
+
+.advantage-small-icon:nth-child(2) {
+    background-image: url("../images/svg/icon-advantage-food.svg");
+    background-repeat: no-repeat;
+    background-position: 162.5px 80px;
+}
+
+.advantage-small-icon:nth-child(3) {
+    background-image: url("../images/svg/icon-advantage-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 162.5px 80px;
 }
 
 .advantage-blue {
@@ -213,9 +274,28 @@ body {
     background-color: #82B3D3;
 }
 
+.advantage-blue::before {
+    content: "";
+    position: absolute;
+    bottom: 204px;
+    width: 60px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 .advantage-light {
     color: #000;
     background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantage-light::before,
+.advantage-small.advantage-light-blue::before {
+    content: "";
+    position: absolute;
+    bottom: 204px;
+    width: 60px;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .advantage-light-blue {
@@ -247,6 +327,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     max-width: 230px;
+    padding-top: 182px;
     margin: 0 0 30px;
 }
 
@@ -259,6 +340,7 @@ body {
 }
 
 .advantages-small-icon .advantage-paragraph {
+    padding-bottom: 81px;
     margin: 0;
 }
 
@@ -312,6 +394,19 @@ body {
     background-color: #756157;
 }
 
+.call-to-action-button:hover {
+    background-color: #615048;
+}
+
+.call-to-action-button:focus {
+    background-color: #615048;
+}
+
+.call-to-action-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #756157;
+}
+
 .subscribe {
     display: flex;
     flex-direction: column;
@@ -343,7 +438,8 @@ body {
 }
 
 .subscribe-input {
-    display: block;
+    box-sizing: border-box;
+    font-family: "PT Sans";
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -356,6 +452,7 @@ body {
 }
 
 .subscribe-button {
+    font-family: "PT Sans";
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
@@ -365,6 +462,19 @@ body {
     padding: 8px 50px;
     border-radius: 0 4px 4px 0;
     border: none;
+}
+
+.subscribe-button:hover {
+    background-color: #68A2CA;
+}
+
+.subscribe-button:focus {
+    background-color: #68A2CA;
+}
+
+.subscribe-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #82B3D3;
 }
 
 .main-footer {
@@ -385,14 +495,28 @@ body {
     padding: 0;
 }
 
-.social-network {
-    min-width: 48px;
-    min-height: 40px;
-    text-align: center;
+.social-network-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 40px;
 }
 
-.social-network-link {
-    display: block;
+.social-logo {
+    fill: #83B3D3;
+}
+
+.social-network-link:hover .social-logo {
+    fill: #68A2CA;
+}
+
+.social-network-link:focus svg {
+    fill: #68A2CA;
+}
+
+.social-network-link:active .social-logo {
+    fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-telephone {
@@ -401,4 +525,36 @@ body {
     font-weight: 400;
     text-decoration: none;
     color: #000;
+}
+
+.footer-telephone:hover {
+    color: #756157;
+}
+
+.footer-telephone:focus {
+    color: #756157;
+}
+
+.footer-telephone:active {
+    color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-logo-link {
+    display: flex;
+}
+
+.footer-logo {
+    fill: #000;
+}
+
+.footer-logo-link:hover svg {
+    fill: #756157;
+}
+
+.footer-logo-link:focus svg {
+    fill: #756157;
+}
+
+.footer-logo-link:active svg {
+    fill: rgba(117, 97, 87, 0.3);
 }
